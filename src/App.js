@@ -4,7 +4,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap';
 import { NaviBar } from './Components/Navibar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import { Footer } from './Components/Footer';
 
 import {Home} from './Pages/Home';
 import {Users} from './Pages/Users';
@@ -21,6 +21,7 @@ function App() {
       <Route exact path="/about" component={About}/>
     </Switch>
     </Router>
+    <Footer/>
   </>
   );
 }
